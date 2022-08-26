@@ -1,0 +1,12 @@
+version: "3.9" 
+
+
+services:
+  crudapp:
+    build: .
+    ports: 
+      - "8000:4200"
+    volumes:
+      - "/app/node_modules"
+      - ".:/app"
+    container_name: hanhdockercompose
